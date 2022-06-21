@@ -20,12 +20,12 @@ server.use("/items", itemsRoutes);
 server.use("/upload", uploadRoutes);
 
 // Documentation setup
-server.use("/docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));
+server.use("/", swaggerUI.serve, swaggerUI.setup(swaggerFile));
 
 server.listen(process.env.PORT || 8000);
 console.log(
   `The server is listening on http://localhost:${process.env.PORT || 8000}
   You can navigate the documentation at http://localhost:${
     process.env.PORT || 8000
-  }/docs`
+  }/`
 );
