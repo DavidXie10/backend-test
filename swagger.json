@@ -47,11 +47,30 @@
         "description": "",
         "parameters": [
           {
-            "name": "obj",
+            "name": "body",
             "in": "body",
-            "description": "Add a user",
             "schema": {
-              "$ref": "#/definitions/CreateUser"
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "password": {
+                  "example": "any"
+                },
+                "countryCode": {
+                  "example": "any"
+                },
+                "phone": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                }
+              }
             }
           }
         ],
@@ -206,35 +225,6 @@
     }
   },
   "definitions": {
-    "CreateUser": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "example": "José Rodríguez Pérez"
-        },
-        "email": {
-          "type": "string",
-          "example": "jose@correo.com"
-        },
-        "password": {
-          "type": "string",
-          "example": "patito"
-        },
-        "countryCode": {
-          "type": "number",
-          "example": 506
-        },
-        "phone": {
-          "type": "number",
-          "example": 70155104
-        },
-        "birthday": {
-          "type": "string",
-          "example": "1989-10-16"
-        }
-      }
-    },
     "LoginUser": {
       "type": "object",
       "properties": {
