@@ -20,11 +20,6 @@ exports.listUsers = async (req, res) => {
 
 exports.createUser = async (req, res) => {
   // #swagger.tags = ['Users']
-  /*  #swagger.parameters['obj'] = {
-          in: 'body',
-          description: 'Add a user',
-          schema: { $ref: '#/definitions/CreateUser' }
-  } */
   try {
     const userPayload = req.body;
     const newUser = await db.User.create({
