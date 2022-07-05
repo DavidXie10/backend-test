@@ -20,7 +20,7 @@ server.use("/items", itemsRoutes);
 server.use("/upload", uploadRoutes);
 
 // Documentation setup
-server.use("/", swaggerUI.serve, swaggerUI.setup(swaggerFile));
+server.use("/docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));
 
 server.listen(process.env.PORT || 8000);
 console.log(
