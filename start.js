@@ -8,14 +8,6 @@ const doc = {
   host: "localhost:7500",
   schemes: ["http", "https"],
   definitions: {
-    CreateUser: {
-      name: "José Rodríguez Pérez",
-      email: "jose@correo.com",
-      password: "patito",
-      countryCode: 506,
-      phone: 70155104,
-      birthday: "1989-10-16",
-    },
     LoginUser: {
       email: "jose@correo.com",
       password: "patito",
